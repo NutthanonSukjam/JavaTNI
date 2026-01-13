@@ -1,11 +1,9 @@
 public class Product {
 
-    // Attributes
     public String name;
     public double price = 0;
     public int quantity = 0;
 
-    // เพิ่มสินค้าเข้าคลัง
     public void addStock(int amount) {
         if (amount > 0) {
             quantity += amount;
@@ -13,7 +11,6 @@ public class Product {
         }
     }
 
-    // ขายสินค้าออกจากคลัง
     public void sell(int amount) {
         if (amount <= quantity) {
             quantity -= amount;
@@ -23,7 +20,6 @@ public class Product {
         }
     }
 
-    // เปลี่ยนราคาสินค้า
     public void changePrice(double newPrice) {
         if (newPrice > 0) {
             price = newPrice;
@@ -31,12 +27,10 @@ public class Product {
         }
     }
 
-    // มูลค่าสินค้าในคลัง
     public double stockValue() {
         return price * quantity;
     }
 
-    // แสดงข้อมูลสินค้า
     public void showInfo() {
         System.out.println("Name  : " + name);
         System.out.println("Price : " + price + " Baht/Item");
@@ -44,4 +38,5 @@ public class Product {
         System.out.println("Stock Value: " + stockValue() + " Baht");
     }
 }
+
 
