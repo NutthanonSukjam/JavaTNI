@@ -45,11 +45,9 @@ public class ProductMain4 {
 
         Product selectedProduct = products[choice - 1];
 
-        // ถามจำนวน
         System.out.print("How many " + selectedProduct.name + " do you want to buy? : ");
         int amount = sc.nextInt();
 
-        // ขายสินค้า
         selectedProduct.sell(amount);
 
         System.out.println();
@@ -58,3 +56,4 @@ public class ProductMain4 {
         sc.close();
     }
 }
+
