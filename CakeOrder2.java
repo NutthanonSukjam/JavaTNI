@@ -6,7 +6,8 @@ public class CakeOrder2 {
     public static String selectFlavor() {
         String[] flavors = {"Chocolate", "Vanilla", "Strawberry", "Lemon", "Red Velvet"};
 
-        for (int i = 0; i < flavors.length; i++) {
+        for (int i = 0; i < flavors.length; i++)
+        {
             System.out.println("Press " + (i + 1) + " for " + flavors[i]);
         }
         while (true) {

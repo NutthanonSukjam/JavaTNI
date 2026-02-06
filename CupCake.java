@@ -29,7 +29,7 @@ public class CupCake extends Bakery{
     }
 
     public String toString(){
-        return super.toString() + "\n" + " Cup Cake ( " + super.getFlavor() + " )"
+        return super.toString() + "\n" + " Cup Cake ( " + super.getflavor() + " )"
                 + " with " + (isPackingBox() ? getBoxNumber() + " Box " : "") + getBagNumber() + " Bag "
                 + "\nTotal price of Cup Cake = " + (this.piece * getUnitPrice());
     }
