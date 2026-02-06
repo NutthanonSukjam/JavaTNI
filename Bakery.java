@@ -10,7 +10,7 @@ public class Bakery {
     public Bakery() {
         this("", 0.0);
     }
-    public String getflaver(){
+    public String getFlavor(){
         return this.flavor;
     }
     public double getUnitPrice(){
