@@ -19,8 +19,8 @@ public class Pudding extends Bakery {
     }
 
     public String toString(){
-        return super.toString() + "\n" + " Pudding ( " + super.getflaver() + " )"
-                + " with " + this.cup + " Box" + GetFree() + "Free Cup!"
+        return super.toString() + "\n" + "Pudding ( " + super.getflaver() + " )"
+                + " with " + this.cup + " cup " + GetFree() + "You get Free Cup!"
                 + "\nTotal price of Pudding = " + calculateTotalPrice();
     }
 }

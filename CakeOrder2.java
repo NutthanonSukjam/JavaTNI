@@ -26,6 +26,7 @@ public class CakeOrder2 {
     public static void main(String[] args) {
         System.out.println("Press 1 to order Birthday Cake");
         System.out.println("Press 2 to order Cup Cake");
+        System.out.println("Press 3 to order Pudding");
         System.out.print("Enter an option: ");
         int option = scan.nextInt();
 
@@ -55,7 +56,19 @@ public class CakeOrder2 {
 
             System.out.println(cupcake.toString());
 
-        } else {
+        }
+        else if (option == 3) {
+
+            String flavor = selectFlavor();
+
+            System.out.print("How many cups: ");
+            int cup = scan.nextInt();
+
+            Pudding pudding = new Pudding(cup, flavor, 70);
+
+            System.out.println(pudding.toString());
+        }
+        else {
             System.out.println("Wrong option!! Try again!!");
         }
     }
